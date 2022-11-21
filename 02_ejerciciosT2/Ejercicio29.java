@@ -13,23 +13,29 @@ public class Ejercicio29 {
         System.out.println("Escribe un numero :");
         int numero = new Scanner(System.in).nextInt();
            
-        System.out.println("Si en vez de numero escribe letras dar√° InputMismatchException");
+        System.out.println("Si en vez de numero escribe letras dar· InputMismatchException");
         
         
         System.out.println("Apartado B");
        
-        int[]lista={};
+        System.out.println("Argumento 1: "+ args[0]);
+        System.out.println("Argumento 1: "+ args[1]);
         
-        //System.out.println(lista[0]+lista[1]);
+        int n1 = Integer.parseInt(args[0]);
+        int n2 = Integer.parseInt(args[1]);
         
-        System.out.println("Si intentamos leer dos valores de una lista que no existe dar√° ArrayIndexOutOfBoundsException");
+        int n3 = n1 + n2;
+        
+        System.out.println("La suma de los argumentos es: " +n3);
+        
+        System.out.println("Si no recibe los argumentos dar· ArrayIndexOutOfBoundsException");
         
         System.out.println("Apartado C");
         Caja c = null;
         //c.abrirCaja();   
         //System.out.println(c.getMensaje().length());
         
-        System.out.println("Si intentamos leer una caja vacia dar√° NullPointerException");
+        System.out.println("Si intentamos leer una caja vacia dar· NullPointerException");
     }
 }
 
