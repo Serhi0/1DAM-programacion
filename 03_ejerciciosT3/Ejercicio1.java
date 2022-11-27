@@ -9,7 +9,7 @@ public class Ejercicio1 {
     public static void main(String[] args){
         
         System.out.println("==============================================");
-        System.out.println("= Elige el número de cancion para reproducir =");
+        System.out.println("= Elige el nÃºmero de cancion para reproducir =");
         System.out.println("==============================================");
         System.out.println("=             1 - Jackson.mp3                =");
         System.out.println("=             2 - Badbunny.mp3               =");
