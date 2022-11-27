@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class ReproductorConLibreria {
     public static void main(String[] args){
         System.out.println("==============================================");
-        System.out.println("= Elige el número de cancion para reproducir =");
+        System.out.println("= Elige el nÃºmero de cancion para reproducir =");
         System.out.println("==============================================");
         System.out.println("=             1 - Pavaroti.mp3                =");
         System.out.println("=             2 - Badbunny.mp3               =");
@@ -26,7 +26,7 @@ public class ReproductorConLibreria {
                 System.out.println("=         Reproduciendo Pavaroti.mp3          =");
                 System.out.println("==============================================");
                 
-                c = new ArchivoMP3("C:/Users/sergi/Documents/FPS/Programación LLFJ/Tema 3/a.mp3");
+                c = new ArchivoMP3("C:/Users/sergi/Documents/FPS/ProgramaciÃ³n LLFJ/Tema 3/a.mp3");
                 System.out.println( "Reproduciendo: "+c.getTitulo());
                 
                 
@@ -36,7 +36,7 @@ public class ReproductorConLibreria {
                 System.out.println("=         Reproduciendo Badbunny.mp3         =");
                 System.out.println("==============================================");
                 
-                c = new ArchivoMP3("C:/Users/sergi/Documents/FPS/Programación LLFJ/Tema 3/Bad Bunny - Tití Me Preguntó.mp3/");
+                c = new ArchivoMP3("C:/Users/sergi/Documents/FPS/ProgramaciÃ³n LLFJ/Tema 3/Bad Bunny - TitÃ­ Me PreguntÃ³.mp3/");
                 System.out.println( "Reproduciendo: "+c.getTitulo());
                 
                 ;
@@ -46,7 +46,7 @@ public class ReproductorConLibreria {
                 System.out.println("=         Reproduciendo CopiaPirata.mp3      =");
                 System.out.println("==============================================");
                 
-                c = new ArchivoMP3("C:/Users/sergi/Documents/FPS/Programación LLFJ/Tema 3/Ayax y Prok - Zinedine.mp3");
+                c = new ArchivoMP3("C:/Users/sergi/Documents/FPS/ProgramaciÃ³n LLFJ/Tema 3/Ayax y Prok - Zinedine.mp3");
                 System.out.println( "Reproduciendo: "+c.getTitulo());
             break;
             case 4:
@@ -54,7 +54,7 @@ public class ReproductorConLibreria {
                 System.out.println("=         Reproduciendo Mozart.mp3           =");
                 System.out.println("==============================================");
                 
-                c = new ArchivoMP3("C:/Users/sergi/Documents/FPS/Programación LLFJ/Tema 3/Mozart - Concierto Para Violin Nº1 En SI Mayor. Allegro Moderato.mp3");
+                c = new ArchivoMP3("C:/Users/sergi/Documents/FPS/ProgramaciÃ³n LLFJ/Tema 3/Mozart - Concierto Para Violin NÂº1 En SI Mayor. Allegro Moderato.mp3");
                 System.out.println( "Reproduciendo: "+c.getTitulo());
             break;
             case 5:
@@ -62,7 +62,7 @@ public class ReproductorConLibreria {
                 System.out.println("=         Reproduciendo Shakira.mp3          =");
                 System.out.println("==============================================");
                 
-                c = new ArchivoMP3("C:/Users/sergi/Documents/FPS/Programación LLFJ/Tema 3/Shakira Ft. Rauw Alejandro - Te Felicito.mp3");
+                c = new ArchivoMP3("C:/Users/sergi/Documents/FPS/ProgramaciÃ³n LLFJ/Tema 3/Shakira Ft. Rauw Alejandro - Te Felicito.mp3");
                 System.out.println( "Reproduciendo: "+c.getTitulo());
             break;
             default:
