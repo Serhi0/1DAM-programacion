@@ -6,13 +6,13 @@ import java.util.*;
 public class EjercicioSwitchCase {
     public static void main(String[] args){
         
-        System.out.println("Introduzca el primer número: ");
+        System.out.println("Introduzca el primer nÃºmero: ");
         int num1 = new Scanner(System.in).nextInt();
         
-        System.out.println("Introduzca el segundo número: ");
+        System.out.println("Introduzca el segundo nÃºmero: ");
         int num2 = new Scanner(System.in).nextInt();
         
-        System.out.println("Introduzca simbolo operación (+, -, *, /,): ");
+        System.out.println("Introduzca simbolo operaciÃ³n (+, -, *, /,): ");
         String operacion = new Scanner(System.in).nextLine();
         
         operacion = operacion.trim();
@@ -37,13 +37,12 @@ public class EjercicioSwitchCase {
                 resultado = (num1*1.0) / num2;
                 System.out.println("El resultado ="+resultado );
             }else{
-                System.out.println("No se puede hacer esta división");
+                System.out.println("No se puede hacer esta divisiÃ³n");
             } 
         break;
         default:
-            case 2:
                 System.out.println("==============================================");
-                System.out.println("=    No inserto ningún operador correcto     =");
+                System.out.println("=    No inserto ningÃºn operador correcto     =");
                 System.out.println("==============================================");
             break;
         }    
