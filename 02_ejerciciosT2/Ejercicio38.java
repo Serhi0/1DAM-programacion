@@ -20,7 +20,7 @@ public class Ejercicio38 {
             r1= (-1*b + Math.sqrt(Math.pow(b, 2)-4*a*c))/2.0*a;
             r2= (-1*b - Math.sqrt(Math.pow(b, 2)- 4*a*c))/2.0*a;
             
-            System.out.println("Solución 1 = "+r1);
+            System.out.println("SoluciÃ³n 1 = "+r1);
             System.out.println("Solucion 2 = "+r2);
             
         }else{
@@ -28,12 +28,11 @@ public class Ejercicio38 {
                   System.out.println("Tiene una solucion:\n");
                 
                   r1= (-1*b + Math.sqrt(Math.pow(b, 2)-4*a*c))/2.0*a;
-                  System.out.println("Solución 1 = "+r1);   
-                }else{
-                      System.out.println("No tiene solución");
+                  System.out.println("SoluciÃ³n 1 = "+r1);   
+               }else{
+                      System.out.println("No tiene soluciÃ³n");
                      }
              } 
         
     }
-
 }
