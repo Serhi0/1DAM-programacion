@@ -25,27 +25,27 @@ public class Ejercicio1 {
                 System.out.println("==============================================");
                 System.out.println("=         Reproduciendo Jackson.mp3          =");
                 System.out.println("==============================================");
-            break;
+                break;
             case 2:
                 System.out.println("==============================================");
                 System.out.println("=         Reproduciendo Badbunny.mp3         =");
                 System.out.println("==============================================");
-            break;
+                break;
             case 3:
                 System.out.println("==============================================");
                 System.out.println("=         Reproduciendo CopiaPirata.mp3      =");
                 System.out.println("==============================================");
-            break;
+                break;
             case 4:
                 System.out.println("==============================================");
                 System.out.println("=         Reproduciendo Mozart.mp3           =");
                 System.out.println("==============================================");
-            break;
+                break;
             case 5:
                 System.out.println("==============================================");
                 System.out.println("=         Reproduciendo Shakira.mp3          =");
                 System.out.println("==============================================");
-            break;
+                break;
             default:
                 System.out.println("==============================================");
                 System.out.println("=         Reproductor no hace nada           =");
