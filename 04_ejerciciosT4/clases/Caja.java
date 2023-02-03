@@ -23,5 +23,11 @@ public class Caja {
         abierto = false;
         mensaje = "Viva el tema 7";
     }
+     public void setMensaje(String m){
+        mensaje = m;
+    }
+    public void pasarMayusculas(){
+        mensaje = mensaje.toUpperCase();
+    }
 
 }
