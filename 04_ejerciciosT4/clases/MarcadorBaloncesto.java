@@ -43,5 +43,14 @@ public class MarcadorBaloncesto {
         
         return aux;
     }
+    public void añadirCanasta(char equipo, int puntos){
+        if(equipo =='L'&& (puntos < 0 || puntos <= 3) ){
+            puntosLocal += puntos;
+        }
+    }
+    public void reset(){
+        puntosLocal = 0;
+        puntosVisitante = 0;
+    }
 
 }
