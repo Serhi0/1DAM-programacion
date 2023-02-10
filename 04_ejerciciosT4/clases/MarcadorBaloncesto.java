@@ -16,41 +16,57 @@ public class MarcadorBaloncesto {
     
     
     public MarcadorBaloncesto(String nL, String nV){
-        nombreLocal = nL;
-        nombreVisitante = nV;
-        puntosLocal = 0;
-        puntosVisitante = 0;  
+       
+        this(nL,nV,null);
     }
     public MarcadorBaloncesto(String nL, String nV, LocalDate f){
-        nombreLocal = nL;
-        nombreVisitante = nV;
-        puntosLocal = 0;
-        puntosVisitante = 0;
-        fecha = f; 
+    
+        this(nL,0,nV,0,f);
     }
-    public MarcadorBaloncesto(String nL,int pL,String nV, int pV, LocalDate f){
+    public MarcadorBaloncesto(String nL,int pL,String nV, int pV, LocalDate fecha){
         nombreLocal = nL;
         nombreVisitante = nV;
         puntosLocal = pL;
         puntosVisitante = pV;
-        fecha = f;
+        this.fecha = fecha;
     }
-    @Override
-    public String toString(){
-        
-        String aux;
-        aux= nombreLocal+":"+puntosLocal+" "+nombreVisitante+":"+puntosVisitante;
-        
-        return aux;
-    }
-    public void aÃ±adirCanasta(char equipo, int puntos){
+    public void añadirCanasta(char equipo, int puntos){
         if(equipo =='L'&& (puntos < 0 || puntos <= 3) ){
             puntosLocal += puntos;
+        }else{
+            if(equipo =='V' && (puntos < 0 || puntos <=3)){
+                puntosVisitante += puntos;
+            }
         }
     }
     public void reset(){
         puntosLocal = 0;
         puntosVisitante = 0;
+    }
+    public int getPuntosLocal(){
+        return puntosLocal;
+    }
+    public int getPuntosVisitante(){
+        return puntosVisitante;
+    }
+    public boolean ganaLocal(){
+        return (puntosLocal>puntosVisitante);
+    }
+    public boolean ganaVisitante(){
+        return (puntosVisitante>puntosLocal);
+    }
+    public boolean hayEmpate(){
+        return (puntosLocal == puntosVisitante);
+    }
+    @Override
+    public String toString(){
+        
+        String aux;
+        aux= "Marcador de Baloncesto: \n"+
+              nombreLocal+":"+puntosLocal+" "+nombreVisitante+":"+puntosVisitante+
+              "\n"+"Fecha: "+fecha;
+        
+        return aux;
     }
 
 }

@@ -18,25 +18,32 @@ public class Punto {
     }
     public Punto(int x, int y){
         
-        if(Toolkit.getDefaultToolkit().getScreenSize().getHeight()> y){
-            y =(int)Toolkit.getDefaultToolkit().getScreenSize().getHeight();
-            x =(int)Toolkit.getDefaultToolkit().getScreenSize().getWidth();
+        if((Toolkit.getDefaultToolkit().getScreenSize().getHeight()< y) ||
+           (Toolkit.getDefaultToolkit().getScreenSize().getWidth()< x)) {
+                this.y =(int)Toolkit.getDefaultToolkit().getScreenSize().getHeight();
+                this.x =(int)Toolkit.getDefaultToolkit().getScreenSize().getWidth();
         }else{
-            if(Toolkit.getDefaultToolkit().getScreenSize().getWidth()> x){
-            y =(int)Toolkit.getDefaultToolkit().getScreenSize().getHeight();
-            x =(int)Toolkit.getDefaultToolkit().getScreenSize().getWidth();
+            this.x = x;
+            this.y = y;
             }
-        }
     }
     public Punto(Punto p){
-        p.x= p.x/2;
-        p.y=p.y/2;
+        this(p.x/2,p.y/2);
     }
     public Punto(double angulo,double distancia){
        
-        x = (int)(distancia *Math.cos(angulo));
-        y = (int)(distancia *Math.sin(angulo));
+        /*this.x = (int)(distancia *Math.cos(angulo));
+        this.y = (int)(distancia *Math.sin(angulo));*/
+        this((int)(distancia *Math.cos(angulo)),(int)(distancia *Math.sin(angulo)));
         
+    }
+    @Override
+    public String toString(){
+        String aux;
+        aux = "Coordenada x: "+Integer.toString(x)+" Cordenada y: "
+                +Integer.toString(y);
+        
+        return aux;
     }
 
 }

@@ -10,12 +10,19 @@ public class DNI {
     private int numero;
     private char letra;
 
-    public DNI(int n, char c){
+    public DNI(int n, char l){
         numero = n;
-        letra = c;
+        letra = l;
     }
-    public DNI(String c){
-        numero = Integer.parseInt(c.substring(0,8));
-        letra = c.charAt(9);
+    public DNI(String dni){
+        numero = Integer.parseInt(dni.substring(0,7));
+        letra = dni.charAt(8);
     }
+    @Override
+    public String toString(){
+        String aux = Integer.toString(numero)+Character.toString(letra);
+        
+        return aux;
+    }
+            
 }

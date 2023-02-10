@@ -12,22 +12,56 @@ public class Caja {
     private String mensaje;
     
     public Caja(String m){
-        mensaje = m;
-        abierto = false;
+        /*mensaje = m;
+        abierto = false;*/
+        this(false,m);
     }
-    public Caja(String m, boolean a){
+    public Caja(boolean a, String m){
         mensaje = m;
         abierto = a;
     }
     public Caja(){
-        abierto = false;
-        mensaje = "Viva el tema 7";
+        /*abierto = false;
+        mensaje = "Viva el tema 7";*/
+        this(false,"Viva el tema 7");
     }
-     public void setMensaje(String m){
-        mensaje = m;
+    public void setMensaje(String m){
+        if(abierto){
+            mensaje = m;
+        }
+        
     }
     public void pasarMayusculas(){
         mensaje = mensaje.toUpperCase();
     }
+    public void abrir(){
+        abierto = true;
+    }
+    public void cerrar(){
+        abierto = false;
+    }
+    public String getMensaje(){
+        
+        String aux;
+        
+        if(abierto){
+           aux = mensaje;
+        }else{
+            aux =null; // el profesor prefiere cadena vacia.
+        }
+        return aux;
+    }
+    @Override
+    public String toString(){
+       String aux;
+        if(abierto){
+           aux = "Estado: Abierta, " +"Mensaje: "+mensaje;
+       }else{
+           aux = "Estado: Cerrada, " +"Mensaje: "+mensaje;
+       }      
+       
+       return aux;
+    }
+    
 
 }

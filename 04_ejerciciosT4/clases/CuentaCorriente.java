@@ -36,5 +36,14 @@ public class CuentaCorriente {
             saldo -= cantidad;
         }
     }
+    @Override
+    public String toString(){
+        String aux;
+        aux = "Cuenta numero: "+numero+" Saldo: "+saldo;
+        return aux;
+    }
+    public double getSaldo(){
+        return saldo;
+    }
 
 }
