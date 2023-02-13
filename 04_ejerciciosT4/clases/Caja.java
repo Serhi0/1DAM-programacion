@@ -12,8 +12,7 @@ public class Caja {
     private String mensaje;
     
     public Caja(String m){
-        /*mensaje = m;
-        abierto = false;*/
+       
         this(false,m);
     }
     public Caja(boolean a, String m){
@@ -21,8 +20,7 @@ public class Caja {
         abierto = a;
     }
     public Caja(){
-        /*abierto = false;
-        mensaje = "Viva el tema 7";*/
+       
         this(false,"Viva el tema 7");
     }
     public void setMensaje(String m){

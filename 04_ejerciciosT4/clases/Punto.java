@@ -32,8 +32,7 @@ public class Punto {
     }
     public Punto(double angulo,double distancia){
        
-        /*this.x = (int)(distancia *Math.cos(angulo));
-        this.y = (int)(distancia *Math.sin(angulo));*/
+        
         this((int)(distancia *Math.cos(angulo)),(int)(distancia *Math.sin(angulo)));
         
     }

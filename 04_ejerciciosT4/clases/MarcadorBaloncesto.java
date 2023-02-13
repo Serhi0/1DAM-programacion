@@ -17,7 +17,7 @@ public class MarcadorBaloncesto {
     
     public MarcadorBaloncesto(String nL, String nV){
        
-        this(nL,nV,null);
+        this(nL,0,nV,0,LocalDate.now());
     }
     public MarcadorBaloncesto(String nL, String nV, LocalDate f){
     
@@ -30,7 +30,7 @@ public class MarcadorBaloncesto {
         puntosVisitante = pV;
         this.fecha = fecha;
     }
-    public void añadirCanasta(char equipo, int puntos){
+    public void aÃ±adirCanasta(char equipo, int puntos){
         if(equipo =='L'&& (puntos < 0 || puntos <= 3) ){
             puntosLocal += puntos;
         }else{

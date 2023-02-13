@@ -5,7 +5,7 @@ import clases.DNI;
 import java.time.*;
 import clases.CuentaCorriente;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
+
 
 /**
  *
@@ -57,20 +57,6 @@ public class Persona {
     public void cobrarSueldo(){
         cuenta.añadirDinero((int) sueldo);
     }
-    @Override
-    public String toString(){
-        String aux;
-        if(fechaNacimiento == null){
-            aux = "Nombre: "+nombre + dni.toString()+ " Fecha nacimiento: Sin registro"
-                    +" "+cuenta.toString();
-        }else{
-            aux = "Nombre: "+nombre+" DNI: "+dni+ " Fecha nacimiento: "
-            +fechaNacimiento.format(DateTimeFormatter.ofPattern("dd/MM/yyyy"))
-                    +" "+cuenta.toString(); 
-        }
-        
-        return aux;
-    }
     public String getNombre(){
         return nombre;   
     }
@@ -101,5 +87,17 @@ public class Persona {
         return(sueldo < 1200);
          
     }
-
+    @Override
+    public String toString(){
+        String aux;
+        if(fechaNacimiento == null){
+            aux = "Nombre: "+nombre + dni.toString()+ " Fecha nacimiento: Sin registro"
+                    +" "+cuenta.toString();
+        }else{
+            aux = "Nombre: "+nombre+" DNI: "+dni+ " Fecha nacimiento: "
+            +fechaNacimiento.format(DateTimeFormatter.ofPattern("dd/MM/yyyy"))
+                    +" "+cuenta.toString(); 
+        }
+        return aux;
+    }
 }

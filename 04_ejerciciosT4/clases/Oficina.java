@@ -4,9 +4,7 @@ package clases;
 
 import clases.DNI;
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import clases.Persona;
-import java.time.Month;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,19 +29,19 @@ public class Oficina {
           trabajadores = null; 
        }else{
             if(tipo >=1){ 
-                trabajadores.add(new Persona("Antonio Pérez Pérez",
+                trabajadores.add(new Persona("Antonio Pï¿½rez Pï¿½rez",
                 new DNI("11111111H"),900,
                 LocalDate.of(2020, 2, 28)));
                 
            }
            if(tipo >=2){ 
-                trabajadores.add(new Persona("Luis López López",
+                trabajadores.add(new Persona("Luis Lï¿½pez Lï¿½pez",
                 new DNI("22222222J"),1000, 
                 LocalDate.of(1995, 9, 10)));
                 
            }
            if(tipo ==3){ 
-                trabajadores.add(new Persona("Ana Díaz Díaz",
+                trabajadores.add(new Persona("Ana Dï¿½az Dï¿½az",
                 new DNI("33333333P"),1200,
                 LocalDate.of(1985, 5, 21)));
             }    
@@ -53,10 +51,10 @@ public class Oficina {
         
         this("Industrias DAW",3);
     }
-    public void añadirEmpleado(Persona p){
+    public void aÃ±adirEmpleado(Persona p){
         trabajadores.add(p);
     }
-    public void añadirEmpleado(String nombre, String DNI, double sueldo, LocalDate fechaNac){
+    public void aÃ±adirEmpleado(String nombre, String DNI, double sueldo, LocalDate fechaNac){
         trabajadores.add(new Persona(nombre,new DNI(DNI),sueldo,fechaNac));
     }
     public int getTotalEmpleados(){

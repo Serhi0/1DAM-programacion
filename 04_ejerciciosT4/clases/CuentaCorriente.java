@@ -14,19 +14,18 @@ public class CuentaCorriente {
     private double saldo;
     
     public CuentaCorriente(){
-        Random aleatorio = new Random();
-        numero = 0 + aleatorio.nextInt(1001-0);
-        saldo = 0;
+       
+        this((int)(0+(1001-0)*Math.random()),0);
     }
     public CuentaCorriente(int numero){
-        this.numero=  numero;
-        saldo = 0;
+      
+        this(numero,0);
     }
     public CuentaCorriente(int numero, double saldo){
         this.numero = numero;
         this.saldo = saldo;
     }
-    public void añadirDinero(int cantidad){
+    public void aï¿½adirDinero(int cantidad){
         saldo += cantidad;
     }
     public void retirarDinero(int cantidad){
@@ -36,14 +35,15 @@ public class CuentaCorriente {
             saldo -= cantidad;
         }
     }
+    public double getSaldo(){
+        return saldo;
+    }
     @Override
     public String toString(){
         String aux;
         aux = "Cuenta numero: "+numero+" Saldo: "+saldo;
         return aux;
     }
-    public double getSaldo(){
-        return saldo;
-    }
+   
 
 }
